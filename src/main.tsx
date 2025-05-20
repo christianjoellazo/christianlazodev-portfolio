@@ -7,7 +7,7 @@ import { BrowserRouter } from "react-router-dom";
 createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
     <BrowserRouter
-      basename={import.meta.env.BASE_URL || "/christianlazo-portfolio"}
+      basename={import.meta.env.BASE_URL || "/christianlazodev-portfolio"}
     >
       <App />
     </BrowserRouter>
