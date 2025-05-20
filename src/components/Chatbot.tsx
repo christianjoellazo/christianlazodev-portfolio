@@ -1,4 +1,3 @@
-
 import React, { useState, useRef, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -17,7 +16,7 @@ interface Message {
 const INITIAL_MESSAGES: Message[] = [
   {
     id: "1",
-    text: "Hi there! I'm Christian's AI assistant. Ask me anything about his skills, experience, or projects!",
+    text: "Hi there! I'm Jarvis, an AI assistant. Ask me anything about his skills, experience, or projects!",
     sender: "bot",
     timestamp: new Date(),
   },
@@ -27,32 +26,33 @@ const INITIAL_MESSAGES: Message[] = [
 const getAnswer = (question: string): string => {
   const lowerQuestion = question.toLowerCase();
   const relevantEntries = [];
-  
+
   // Score each knowledge base entry by relevance
   for (const entry of KNOWLEDGE_BASE) {
-    if (entry.question.some(q => lowerQuestion.includes(q))) {
+    if (entry.question.some((q) => lowerQuestion.includes(q))) {
       relevantEntries.push({
         answer: entry.answer,
-        relevance: entry.question.filter(q => lowerQuestion.includes(q)).length
+        relevance: entry.question.filter((q) => lowerQuestion.includes(q))
+          .length,
       });
     }
   }
-  
+
   // Sort by relevance score and return most relevant
   if (relevantEntries.length > 0) {
     relevantEntries.sort((a, b) => b.relevance - a.relevance);
     return relevantEntries[0].answer;
   }
-  
+
   return "I don't have specific information about that. Please ask about Christian's skills, education, projects, or experience, or use the contact form to reach out directly.";
 };
 
 // Suggested questions for better user engagement
 const SUGGESTED_QUESTIONS = [
   "Tell me about Christian's skills",
-  "What projects has Christian worked on?", 
+  "What projects has Christian worked on?",
   "What is Christian's educational background?",
-  "What technologies does Christian use?"
+  "What technologies does Christian use?",
 ];
 
 const Chatbot: React.FC = () => {
@@ -72,20 +72,24 @@ const Chatbot: React.FC = () => {
       setIsDocked(window.innerWidth < 768);
     };
     handleResize(); // Initial check
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   // Handle clicking outside to close chatbot
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
-      if (chatbotRef.current && !chatbotRef.current.contains(event.target as Node) && isOpen) {
+      if (
+        chatbotRef.current &&
+        !chatbotRef.current.contains(event.target as Node) &&
+        isOpen
+      ) {
         setIsOpen(false);
       }
     };
-    
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
   }, [isOpen]);
 
   useEffect(() => {
@@ -97,13 +101,13 @@ const Chatbot: React.FC = () => {
   // Handle keyboard accessibility
   useEffect(() => {
     const handleEscape = (e: KeyboardEvent) => {
-      if (e.key === 'Escape' && isOpen) {
+      if (e.key === "Escape" && isOpen) {
         setIsOpen(false);
       }
     };
-    
-    window.addEventListener('keydown', handleEscape);
-    return () => window.removeEventListener('keydown', handleEscape);
+
+    window.addEventListener("keydown", handleEscape);
+    return () => window.removeEventListener("keydown", handleEscape);
   }, [isOpen]);
 
   const handleSendMessage = (text: string = input) => {
@@ -122,7 +126,7 @@ const Chatbot: React.FC = () => {
     setIsTyping(true);
 
     // Remove the used suggestion if it matches
-    setSuggestions(prev => prev.filter(q => q !== text));
+    setSuggestions((prev) => prev.filter((q) => q !== text));
 
     // Simulate response delay with typing indicator
     setTimeout(() => {
@@ -135,7 +139,7 @@ const Chatbot: React.FC = () => {
 
       setMessages((prev) => [...prev, botResponse]);
       setIsTyping(false);
-      
+
       // Regenerate suggestions based on the conversation
       if (suggestions.length < 2) {
         setSuggestions(SUGGESTED_QUESTIONS.slice(0, 3));
@@ -153,16 +157,19 @@ const Chatbot: React.FC = () => {
   const toggleChatbot = () => {
     setIsOpen(!isOpen);
     if (!isOpen) {
-      toast.info("AI Assistant activated! Ask me anything about Christian's portfolio.", {
-        duration: 3000,
-        icon: "🤖",
-      });
+      toast.info(
+        "AI Assistant activated! Ask me anything about Christian's portfolio.",
+        {
+          duration: 3000,
+          icon: "🤖",
+        }
+      );
     }
   };
 
   // Position class for chatbot container
-  const positionClass = isDocked 
-    ? "fixed bottom-24 left-0 right-0 mx-auto max-w-[90vw] md:max-w-md" 
+  const positionClass = isDocked
+    ? "fixed bottom-24 left-0 right-0 mx-auto max-w-[90vw] md:max-w-md"
     : "fixed bottom-24 right-6 z-40 w-full md:w-96 max-w-[90vw] md:max-w-md";
 
   return (
@@ -181,7 +188,10 @@ const Chatbot: React.FC = () => {
         >
           {isOpen ? <X size={24} /> : <MessageCircle size={24} />}
           {!isOpen && (
-            <span className="absolute top-0 right-0 h-3 w-3 bg-green-500 rounded-full animate-pulse" aria-hidden="true"></span>
+            <span
+              className="absolute top-0 right-0 h-3 w-3 bg-green-500 rounded-full animate-pulse"
+              aria-hidden="true"
+            ></span>
           )}
         </Button>
       </motion.div>
@@ -202,7 +212,10 @@ const Chatbot: React.FC = () => {
           >
             <div className="flex flex-col h-[450px] bg-background dark:bg-gray-800 border border-border dark:border-gray-700 shadow-xl rounded-lg overflow-hidden">
               {/* Header */}
-              <div className="bg-navy dark:bg-gray-900 text-white p-4 flex justify-between items-center" id="chatbot-title">
+              <div
+                className="bg-navy dark:bg-gray-900 text-white p-4 flex justify-between items-center"
+                id="chatbot-title"
+              >
                 <div className="flex items-center space-x-2">
                   <Bot size={18} aria-hidden="true" />
                   <div>
@@ -212,14 +225,17 @@ const Chatbot: React.FC = () => {
                     </p>
                   </div>
                 </div>
-                <Badge variant="secondary" className="text-xs flex items-center gap-1 dark:bg-primary dark:text-navy">
+                <Badge
+                  variant="secondary"
+                  className="text-xs flex items-center gap-1 dark:bg-primary dark:text-navy"
+                >
                   <Sparkles size={12} aria-hidden="true" />
                   <span>Jarvis</span>
                 </Badge>
               </div>
 
               {/* Messages */}
-              <div 
+              <div
                 className="flex-1 overflow-y-auto p-4 space-y-4 scrollbar-thin bg-slate-50 dark:bg-gray-800"
                 aria-live="polite"
                 aria-relevant="additions"
@@ -231,7 +247,9 @@ const Chatbot: React.FC = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.3 }}
                     className={`flex ${
-                      message.sender === "user" ? "justify-end" : "justify-start"
+                      message.sender === "user"
+                        ? "justify-end"
+                        : "justify-start"
                     }`}
                   >
                     <div
@@ -254,7 +272,7 @@ const Chatbot: React.FC = () => {
                 ))}
 
                 {isTyping && (
-                  <motion.div 
+                  <motion.div
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
                     className="flex justify-start"
@@ -289,13 +307,15 @@ const Chatbot: React.FC = () => {
               {suggestions.length > 0 && (
                 <div className="px-4 py-2 bg-slate-100 dark:bg-gray-700 flex flex-wrap gap-2">
                   {suggestions.map((question, index) => (
-                    <Badge 
+                    <Badge
                       key={index}
-                      variant="outline" 
+                      variant="outline"
                       className="cursor-pointer hover:bg-slate-200 dark:hover:bg-gray-600 transition-colors text-xs py-1 focus-ring"
                       onClick={() => handleSendMessage(question)}
                       tabIndex={0}
-                      onKeyDown={(e) => e.key === 'Enter' && handleSendMessage(question)}
+                      onKeyDown={(e) =>
+                        e.key === "Enter" && handleSendMessage(question)
+                      }
                       role="button"
                       aria-label={`Ask: ${question}`}
                     >
