@@ -47,8 +47,8 @@ const Hero: React.FC = () => {
                 className="border-navy text-navy hover:bg-lightGray dark:border-gray-500 dark:text-gray-300 dark:hover:bg-gray-800"
                 onClick={() => {
                   const link = document.createElement("a");
-                  link.href = "/assets/christian-lazo-resume.pdf";
-                  link.download = "Christian-Lazo-Resume.pdf";
+                  link.href = "https://flowcv.com/resume/71j98nmqc1di";
+                  link.target = "_blank"; // optional: open in new tab
                   document.body.appendChild(link);
                   link.click();
                   document.body.removeChild(link);
