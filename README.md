@@ -1,54 +1,67 @@
-# React + TypeScript + Vite
+# Christian Lazo - Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Overview
 
-Currently, two official plugins are available:
+Welcome to my professional portfolio project — a modern, scalable web application showcasing my skills and expertise in frontend development, AI, and electronics engineering.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+This portfolio showcases my technical skills and professional experience through:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Responsive Design**: Fully responsive layout that works seamlessly on desktop, tablet, and mobile devices
+- **Dark/Light Mode**: Theme toggle with persistence for optimal viewing experience
+- **Interactive Projects Showcase**: Detailed project cards with additional information pages
+- **Dynamic Skills Visualization**: Interactive skill ratings with detailed descriptions
+- **AI-Powered Chatbot**: Custom assistant to help visitors navigate the portfolio and learn about my experience
+- **Smooth Animations**: Enhanced user experience with subtle motion and transitions
+- **Professional Resume**: Downloadable CV and online resume page
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Technology Stack
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+This project leverages cutting-edge technologies:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **Framework**: React with TypeScript for type safety and improved development experience
+- **Styling**: Tailwind CSS with a custom configuration for consistent design
+- **Component Library**: shadcn/ui for accessible, reusable UI components
+- **Build Tool**: Vite for fast development and optimized production builds
+- **Animation**: Framer Motion for smooth, performant animations
+- **State Management**: React Query for efficient data fetching and caching
+- **Routing**: React Router for seamless navigation between pages
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## Core Sections
+
+The portfolio is organized into several key sections:
+
+- **Hero**: Introduction and quick navigation
+- **About**: Professional summary and personal information
+- **Projects**: Showcase of significant work with detailed case studies
+- **Skills**: Visual representation of technical competencies
+- **Experience**: Professional work history and achievements
+- **Education**: Academic background and accomplishments
+- **Contact**: Form to get in touch and social media links
+
+## Interactive Features
+
+The portfolio includes several interactive elements:
+
+- **Theme Toggle**: Switch between light and dark modes with animations
+- **AI Chatbot**: Get information about my skills and experience
+- **Project Details**: Click on any project card to see an in-depth case study
+- **Skill Categories**: Filter skills by category for easier navigation
+- **Resume Download**: Easily access and download my current resume
+
+## Contributing
+
+While this is a personal portfolio, I'm open to suggestions and improvements! Feel free to:
+
+- Report any bugs or issues
+- Submit feature suggestions
+- Propose design improvements
+
+## Contact
+
+Feel free to reach out to me at:
+
+- Email: lazo.c2001@gmail.com
+- LinkedIn: [Christian Lazo](https://www.linkedin.com/in/laxseuss/)
+- GitHub: [christianlazo](https://github.com/laxseuss8)
