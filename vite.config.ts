@@ -13,7 +13,7 @@ export default defineConfig(async ({ mode }) => {
 
   return {
     // Set base path for GitHub Pages
-    base: mode === "production" ? "/christianlazo-portfolio": "/",
+    base: mode === "production" ? "/christianlazodev-portfolio": "/",
     server: {
       host: "0.0.0.0",
       port: 8080,
