@@ -29,11 +29,6 @@ const Hero: React.FC = () => {
               enhance productivity. I am passionate about crafting innovative
               solutions that drive meaningful impact.
               <br />
-              Data Science and Machine Learning experience upon academic
-              projects and internship, requiring quick turnarounds and extensive
-              troubleshooting. Skilled in delivering insights and solutions
-              under tight deadlines leveraging tools.
-              <br />
               <br />
               Tell me and I forget, teach me and I remember, involve me and I
               learn.
