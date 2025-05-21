@@ -58,13 +58,13 @@ const skillCategories: SkillCategory[] = [
     skills: [
       {
         name: "Node.js",
-        level: 65,
+        level: 60,
         description:
           "RESTful APIs, Express middleware, asynchronous programming",
       },
       {
         name: "Supabase",
-        level: 70,
+        level: 55,
         description: "Realtime database, authentication, ORM",
       },
     ],
@@ -89,7 +89,7 @@ const skillCategories: SkillCategory[] = [
     skills: [
       {
         name: "Git",
-        level: 70,
+        level: 60,
         description: "Version control, branching strategies, collaboration",
       },
       {
