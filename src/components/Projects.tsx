@@ -3,7 +3,7 @@ import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
 import { cn } from "@/lib/utils";
-import robotics from "../assets/robotics.svg";
+import robotics from "../assets/robotics.png";
 import consumer from "../assets/consumer.png";
 import capstone from "../assets/capstone.svg";
 
