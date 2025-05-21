@@ -26,7 +26,7 @@ const hackathonEvents: HackathonEvent[] = [
     date: "March 17-18, 2025",
     location: "Taguig, Philippines",
     description:
-      "Developed an agentic AI-powered training material solution for CSR agents aimed at reducing Average Handle Time (AHT) and decreasing DSAT, aligned with the identified problem statement and proposed solution.",
+      "Developed an agentic AI-powered training material solution for CSR agents aimed at reducing AHT and DSAT, aligned with the identified problem statement and proposed solution.",
     achievement: "Top 5 Finalist",
     technologies: [
       "Python",
