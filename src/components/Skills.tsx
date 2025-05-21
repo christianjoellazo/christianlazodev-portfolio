@@ -27,19 +27,29 @@ const skillCategories: SkillCategory[] = [
         description: "Component architecture, hooks, state management",
       },
       {
-        name: "JavaScript/TypeScript",
+        name: "TypeScript",
         level: 70,
-        description: "ES6+, Type safety, Interfaces",
+        description: "ES6+, static typing, interfaces",
       },
       {
-        name: "HTML/TailwindCSS",
+        name: "JavaScript",
+        level: 70,
+        description: "ES6+, DOM manipulation, asynchronous programming",
+      },
+      {
+        name: "TailwindCSS",
         level: 80,
-        description: "Responsive design, CSS frameworks",
+        description: "Utility-first CSS framework, responsive design",
+      },
+      {
+        name: "HTML",
+        level: 80,
+        description: "Semantic markup, responsive web design",
       },
       {
         name: "Next.js",
         level: 70,
-        description: "Server-side rendering, static generation",
+        description: "Server-side rendering, static site generation, routing",
       },
     ],
   },
@@ -49,12 +59,13 @@ const skillCategories: SkillCategory[] = [
       {
         name: "Node.js",
         level: 65,
-        description: "RESTful APIs, Express middleware",
+        description:
+          "RESTful APIs, Express middleware, asynchronous programming",
       },
       {
-        name: "Django",
+        name: "Supabase",
         level: 70,
-        description: "ORM, admin interface, authentication",
+        description: "Realtime database, authentication, ORM",
       },
     ],
   },
@@ -64,12 +75,12 @@ const skillCategories: SkillCategory[] = [
       {
         name: "PostgreSQL",
         level: 70,
-        description: "Relational design, performance tuning",
+        description: "Relational database design, performance tuning, indexing",
       },
       {
-        name: "Firebase",
+        name: "Supabase",
         level: 55,
-        description: "Realtime database, authentication",
+        description: "PostgreSQL-based realtime DB, authentication, API",
       },
     ],
   },
@@ -79,17 +90,17 @@ const skillCategories: SkillCategory[] = [
       {
         name: "Git",
         level: 70,
-        description: "Version control, branching strategies",
+        description: "Version control, branching strategies, collaboration",
       },
       {
         name: "Docker",
         level: 55,
-        description: "Containerization, Docker Compose",
+        description: "Containerization, Docker Compose, image management",
       },
       {
         name: "AWS",
         level: 55,
-        description: "S3",
+        description: "S3, cloud storage, basic AWS services",
       },
     ],
   },
@@ -97,35 +108,80 @@ const skillCategories: SkillCategory[] = [
     name: "Machine Learning",
     skills: [
       {
+        name: "Python",
+        level: 80,
+        description: "Scripting, data processing, ML libraries",
+      },
+      {
         name: "Computer Vision",
         level: 80,
-        description:
-          "Object detection, image classification, image processing techniques",
+        description: "Object detection, image classification, image processing",
       },
       {
         name: "TensorFlow",
         level: 75,
-        description: "Neural networks, model training",
+        description: "Neural network design, training, model deployment",
       },
       {
-        name: "Sci-kit",
+        name: "Keras",
+        level: 75,
+        description: "High-level neural network API, model prototyping",
+      },
+      {
+        name: "Scikit-Learn",
         level: 70,
-        description: "Model deployment, transfer learning",
+        description: "Classical ML models, evaluation, deployment",
       },
       {
         name: "PyTorch",
         level: 70,
-        description: "Model deployment, transfer learning",
+        description: "Dynamic neural networks, model training, deployment",
       },
       {
         name: "LangChain",
         level: 70,
-        description: "Model orchestration, prompt chaining",
+        description: "LLM orchestration, prompt chaining, workflow automation",
       },
       {
-        name: "LangGraph",
+        name: "Ragas",
         level: 70,
-        description: "LLM workflow visualization and execution, RAG",
+        description:
+          "LLM workflow visualization, Retrieval-Augmented Generation (RAG)",
+      },
+    ],
+  },
+  {
+    name: "Data Science",
+    skills: [
+      {
+        name: "Pandas",
+        level: 80,
+        description: "Data manipulation, analysis, and cleaning",
+      },
+      {
+        name: "Seaborn",
+        level: 80,
+        description: "Statistical data visualization, plotting",
+      },
+      {
+        name: "Matplotlib",
+        level: 75,
+        description: "Customizable plotting and charting",
+      },
+      {
+        name: "OpenCV",
+        level: 75,
+        description: "Image processing, computer vision algorithms",
+      },
+      {
+        name: "Scikit-Learn",
+        level: 70,
+        description: "Machine learning, classification, regression",
+      },
+      {
+        name: "Image Processing Techniques",
+        level: 70,
+        description: "Filtering, transformation, feature extraction",
       },
     ],
   },
