@@ -12,6 +12,7 @@ import Contact from "@/components/Contact";
 import BackToTop from "@/components/BackToTop";
 import Footer from "@/components/Footer";
 import Chatbot from "@/components/Chatbot";
+import Hero1 from "@/components/Hero1";
 
 const Index = () => {
   // Add class to style the animate-in elements
@@ -35,7 +36,7 @@ const Index = () => {
   return (
     <div className="min-h-screen dark:bg-darkBackground">
       <Navbar />
-      <Hero />
+      <Hero1 />
       <About />
       <Education />
       <Projects />
