@@ -9,6 +9,7 @@ import NotFound from "./pages/NotFound";
 import ProjectDetail from "./pages/ProjectDetail";
 import Resume from "./pages/Resume";
 import React from "react";
+import Hero2 from "./components/Hero2";
 
 const App = () => {
   // Create a client
