@@ -41,7 +41,18 @@ export default function Hero() {
       id="home"
       className="container mx-auto flex items-center px-4 md:px-6 min-h-screen relative overflow-hidden"
     >
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+      {" "}
+      {/* Background with overlay */}
+      <div
+        className="absolute z-10 inset-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage:
+            'url("https://c4.wallpaperflare.com/wallpaper/146/565/309/painting-starry-night-abstract-vincent-van-gogh-wallpaper-preview.jpg")',
+        }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-white/70 to-white dark:from-black/30 dark:via-black/70 dark:to-black"></div>
+      </div>
+      <div className="z-20 grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
         <div
           className="md:col-span-1 flex flex-col items-center animate-fade-in-up"
           style={{ animationDelay: "0.2s" }}
@@ -52,15 +63,15 @@ export default function Hero() {
             className="rounded-full w-48 h-48 md:w-64 md:h-64 object-cover border-4 border-white shadow-lg"
           />
         </div>
-        <div className="md:col-span-2 space-y-6 text-center md:text-left">
+        <div className="mt-28 md:col-span-2 space-y-6 text-center md:text-left">
           <div
             className="animate-fade-in-up"
             style={{ animationDelay: "0.4s" }}
           >
-            <h1 className="text-3xl md:text-5xl font-bold font-serif">
+            <h1 className="text-3xl md:text-5xl font-bold font-serif dark:text-white/90 text-black/90">
               Christian Joel Lazo
             </h1>
-            <p className="mt-1 text-lg md:text-xl text-muted-foreground">
+            <p className="dark:text-white/70 mt-1 text-lg md:text-xl text-black/70">
               Machine Learning Engineer
             </p>
           </div>
@@ -81,7 +92,7 @@ export default function Hero() {
           </div>
 
           <blockquote
-            className="border-l-4 border-primary pl-4 italic text-muted-foreground animate-fade-in-up"
+            className="border-l-4 border-primary pl-4 italic dark:text-white/80 text-black/80 animate-fade-in-up"
             style={{ animationDelay: "0.8s" }}
           >
             "Tell me and I forget. Teach me and I remember. Involve me and I
