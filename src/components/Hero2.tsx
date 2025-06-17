@@ -50,7 +50,7 @@ export default function Hero() {
             'url("https://c4.wallpaperflare.com/wallpaper/146/565/309/painting-starry-night-abstract-vincent-van-gogh-wallpaper-preview.jpg")',
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-white/70 to-white dark:from-black/30 dark:via-black/70 dark:to-black"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-white/70 to-white dark:from-black/30 dark:via-black/70 dark:to-slate-900"></div>
       </div>
       <div className="z-20 grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
         <div
