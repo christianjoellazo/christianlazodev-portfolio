@@ -52,7 +52,7 @@ export default function Hero() {
       >
         <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-white/70 to-white dark:from-black/30 dark:via-black/70 dark:to-slate-900"></div>
       </div>
-      <div className="z-20 grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
+      <div className="md:mt-60 mt-20 z-20 grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
         <div
           className="md:col-span-1 flex flex-col items-center animate-fade-in-up"
           style={{ animationDelay: "0.2s" }}
@@ -63,7 +63,7 @@ export default function Hero() {
             className="rounded-full w-48 h-48 md:w-64 md:h-64 object-cover border-4 border-white shadow-lg"
           />
         </div>
-        <div className="mt-28 md:col-span-2 space-y-6 text-center md:text-left">
+        <div className="md:col-span-2 space-y-6 text-center md:text-left">
           <div
             className="animate-fade-in-up"
             style={{ animationDelay: "0.4s" }}
