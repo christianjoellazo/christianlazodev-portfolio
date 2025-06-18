@@ -39,7 +39,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="container mx-auto flex items-center px-4 md:px-6 min-h-screen relative overflow-hidden"
+      className="container mx-auto flex min-h-[calc(100vh-4rem)] items-center px-4 md:px-6"
     >
       {" "}
       {/* Background with overlay */}
@@ -58,7 +58,7 @@ export default function Hero() {
           style={{ animationDelay: "0.2s" }}
         >
           <img
-            src="https://media.licdn.com/dms/image/v2/D5603AQGBswO2SkzIFg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1727874223397?e=1752710400&v=beta&t=OEZoCJai7z7OYwDAEfzPL1KWWmxUPoZbB5nfKJYtyHc"
+            src="https://www.linkedin.com/in/laxseuss/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BkeY4eUMURp%2BaRo3FxBciwA%3D%3D"
             alt="Christian Joel Lazo"
             className="rounded-full w-48 h-48 md:w-64 md:h-64 object-cover border-4 border-white shadow-lg"
           />
