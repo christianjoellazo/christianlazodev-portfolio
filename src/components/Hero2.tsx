@@ -58,9 +58,9 @@ export default function Hero() {
           style={{ animationDelay: "0.2s" }}
         >
           <img
-            src="https://www.linkedin.com/in/laxseuss/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BkeY4eUMURp%2BaRo3FxBciwA%3D%3D"
+            src="https://media.licdn.com/dms/image/v2/D5603AQGBswO2SkzIFg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1727874223397?e=1755734400&v=beta&t=HYlqeDfhI5WlJSb0SWSyDRYGGQLyxdZGbxqoAa-urz0"
             alt="Christian Joel Lazo"
-            className="rounded-full w-48 h-48 md:w-64 md:h-64 object-cover border-4 border-white shadow-lg"
+            className="rounded-3xl w-48 h-48 md:w-64 md:h-64 object-cover border-4 border-white shadow-lg"
           />
         </div>
         <div className="md:col-span-2 space-y-6 text-center md:text-left">
