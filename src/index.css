@@ -139,6 +139,16 @@
     margin: 0 auto;
     max-width: 90vw;
   }
+  .glass-card {
+    @apply bg-white/10 dark:bg-black/20 backdrop-blur-xl border border-white/20 dark:border-white/10;
+  }
+  
+  .hover-lift {
+    @apply transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl;
+  }
+  
+  .glow-effect {
+    @apply relative before:absolute before:inset-0 before:rounded-full before:bg-gradient-to-r before:from-blue-500/20 before:to-purple-500/20 before:blur-xl before:opacity-0 hover:before:opacity-100 before:transition-opacity before:duration-500;
 
   @media (min-width: 768px) {
     .chatbot-container {
