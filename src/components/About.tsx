@@ -19,12 +19,12 @@ export default function About() {
         </CardHeader>
         <CardContent>
           <p className="text-muted-foreground leading-relaxed">
-            I'm Christian Joel Lazo, a passionate aspiring Machine Learning
-            Engineer with a knack for building impactful projects th. My journey
-            began with a fascination for electronics, which quickly evolved into
-            a deep love for software development and artificial intelligence. I
-            thrive on challenges and am constantly seeking new ways to apply my
-            skills to solve real-world problems.
+            Hey there! I'm Christian Joel Lazo, and I'm on a mission to build
+            impactful solutions as an aspiring Machine Learning Engineer. My
+            journey into tech started with a fascination for electronics, which
+            quickly blossomed into a deep passion for software development and
+            artificial intelligence. I genuinely love a good challenge and am
+            always eager to apply my skills to solve real-world problems.
           </p>
           <p className="text-muted-foreground mt-4 leading-relaxed">
             I believe in learning by doing and am dedicated to continuous growth
