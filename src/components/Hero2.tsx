@@ -52,14 +52,14 @@ export default function Hero() {
       >
         <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-white/70 to-white dark:from-black/30 dark:via-black/70 dark:to-slate-900"></div>
       </div>
-      <div className="md:mt-60 mt-20 z-20 grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
+      <div className="md:mt-60 mt-20 z-20 grid grid-cols-1 md:grid-cols-3 gap-8 items-center w-full">
         <div
           className="md:col-span-1 flex flex-col items-center animate-fade-in-up"
           style={{ animationDelay: "0.2s" }}
         >
           <img
             src="https://media.licdn.com/dms/image/v2/D5603AQGBswO2SkzIFg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1727874223397?e=1755734400&v=beta&t=HYlqeDfhI5WlJSb0SWSyDRYGGQLyxdZGbxqoAa-urz0"
-            alt="Christian Joel Lazo"  
+            alt="Christian Joel Lazo"
             className="rounded-3xl w-48 h-48 md:w-64 md:h-64 object-cover border-4 border-white shadow-lg"
           />
         </div>
